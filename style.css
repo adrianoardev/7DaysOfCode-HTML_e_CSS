@@ -1,4 +1,5 @@
 :root {
+  --text-black: #101828;
   --text-color: #667085;
   --main-color: #8e2424;
 }
@@ -132,14 +133,75 @@ span {
   font-size: 18px;
   font-weight: 500;
   line-height: 28px;
-  color: #101828;
+  color: var(--text-black);
 }
 
 .metrica p {
   font-weight: 400;
   line-height: 24px;
   font-size: 16px;
-  color: #667085;
+  color: var(--text-color);
   height: 48px;
   width: 280px;
+}
+
+/***************** VAGAS *****************/
+
+.vagas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 96px 0px;
+  gap: 64px;
+
+  width: 100%;
+  height: 1798px;
+}
+
+.talentos {
+  height: 602px;
+}
+
+.vagas-container {
+  display: flex;
+  justify-content: center;
+  padding: 0px 32px;
+  height: 138px;
+  left: 80px;
+  top: 96px;
+}
+
+.vagas-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vagas-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.vagas-texto span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 12px;
+  height: 28px;
+  background: rgba(142, 36, 36, 0.05);
+  border-radius: 16px;
+}
+
+.vagas-texto p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.talentos img {
+  padding-top: 64px;
 }
